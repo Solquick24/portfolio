@@ -3,6 +3,8 @@
 충남대학교 클라우드 데이터베이스 수업의 자기소개 웹앱 프로젝트이다.
 원페이지 정적 사이트를 Amazon S3에 올리고 CloudFront(OAC)로 배포한다.
 
+사이트 주소: https://d3b09ii6vr1zn8.cloudfront.net
+
 ## 화면 구성
 
 | ID | 섹션 | 내용 |
@@ -34,5 +36,5 @@ scripts/deploy.ps1  S3 업로드와 CloudFront 캐시 무효화
 
 ```powershell
 aws login                       # 브라우저 로그인으로 임시 자격 증명 받기
-./scripts/deploy.ps1 -DistributionId <CloudFront 배포 ID>
+./scripts/deploy.ps1
 ```

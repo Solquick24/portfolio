@@ -10,7 +10,8 @@ Claude Code로 코드를 고친다 → GitHub(Solquick24/portfolio)에 push → 
 ## AWS 리소스
 - 리전: ap-northeast-2 (서울)
 - S3 버킷: solquick24-portfolio (퍼블릭 액세스 차단 유지)
-- CloudFront: OAC로만 S3에 접근, 기본 루트 객체 index.html
+- CloudFront: 배포 ID E3EBX10YEJY6LC, 주소 https://d3b09ii6vr1zn8.cloudfront.net
+- OAC: solquick24-portfolio-oac로만 S3에 접근, 기본 루트 객체 index.html
 
 ## 지켜야 할 것
 - S3 버킷의 퍼블릭 액세스 차단을 풀지 않는다. 접근은 CloudFront OAC로만 한다.
