@@ -1,0 +1,54 @@
+[
+  {
+    "id": "pingo",
+    "title": "핑고 (Pingo)",
+    "period": "2026 · 개발 중",
+    "summary": "지도에 핀을 찍어 여러 사람이 합의하도록 돕는 서비스",
+    "tags": ["지도", "AI"],
+    "thumb": { "label": "PINGO", "color": "#2f9e72" },
+    "detail": {
+      "overview": "사용자들이 지도에 핀을 찍어 의견을 내면, AI 핑고가 그 의견을 모아 합의에 이르도록 돕는 서비스이다.",
+      "role": "서비스 기획과 개발"
+    }
+  },
+  {
+    "id": "baton",
+    "title": "바통 (Baton)",
+    "period": "2026 · 해커톤",
+    "summary": "병원 진료에 번갈아 동행하는 가족을 위한 AI 인수인계 노트",
+    "tags": ["TypeScript", "OpenAI Codex"],
+    "thumb": { "label": "BATON", "color": "#e8590c" },
+    "detail": {
+      "overview": "DevDay Exchange Community Hackathon Seoul의 'AI for Human Life' 주제로 만든 프로젝트이다. 가족이 돌아가며 진료에 동행할 때 지난 진료 내용을 AI가 정리해 다음 사람에게 넘겨준다.",
+      "team": "팀 페이스 메이커",
+      "tech": "TypeScript, OpenAI Codex (Codex만 쓰는 해커톤)",
+      "link": "https://github.com/Solquick24/baton-project"
+    }
+  },
+  {
+    "id": "market",
+    "title": "중고거래 플랫폼",
+    "period": "2026 · 데이터베이스 텀프로젝트",
+    "summary": "Oracle과 Streamlit으로 만든 중고거래 웹 서비스",
+    "tags": ["Oracle", "Python", "Streamlit"],
+    "thumb": { "label": "MARKET", "color": "#6741d9" },
+    "detail": {
+      "overview": "데이터베이스 수업 텀프로젝트로 중고거래 플랫폼을 처음부터 끝까지 만들었다. 테이블 DDL과 시드 데이터, ROLLUP과 윈도우 함수를 쓴 분석 쿼리, UI 설계 문서를 작성하고 실제로 동작하는 데모까지 완성했다.",
+      "role": "DB 설계, 분석 쿼리 작성, Streamlit 화면 구현",
+      "result": "데모 중 발견한 NaN 변환 오류, 여러 단어 검색, 세션 단위 자동 취소 문제를 고쳐 완성했다.",
+      "tech": "Oracle, Python, Streamlit"
+    }
+  },
+  {
+    "id": "ragflow",
+    "title": "RAGFlow 오픈소스 기여",
+    "period": "2026.10 ~",
+    "summary": "infiniflow/ragflow의 PDF 파싱 버그 이슈에 참여",
+    "tags": ["Open Source", "Python", "RAG"],
+    "thumb": { "label": "RAGFlow", "color": "#1f6feb" },
+    "detail": {
+      "overview": "오픈소스 RAG 엔진 RAGFlow에서 Docling으로 PDF를 파싱할 때 페이지 위치와 페이지 수가 잘못 나오는 버그(이슈 #21215)에 참여해 기여를 진행하고 있다.",
+      "link": "https://github.com/infiniflow/ragflow/issues/21215"
+    }
+  }
+]

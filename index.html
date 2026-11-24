@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>장현성 | 자기소개</title>
+  <meta name="description" content="충남대학교 장현성의 자기소개와 프로젝트 모음">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <nav class="topbar-inner" aria-label="주요 메뉴">
+      <a class="brand" href="#home">장현성</a>
+      <ul class="menu">
+        <li><a href="#about">소개</a></li>
+        <li><a href="#projects">프로젝트</a></li>
+        <li><a href="#contact">연락처</a></li>
+        <li><a href="#guestbook">방명록</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- S01 홈 -->
+    <section id="home" class="hero">
+      <div class="container">
+        <p class="hero-kicker">충남대학교 컴퓨터 전공</p>
+        <h1 class="hero-title">안녕하세요,<br>개발자 <span class="accent">장현성</span>입니다.</h1>
+        <p class="hero-sub">데이터베이스와 클라우드, AI를 엮어 실제로 쓰이는 서비스를 만드는 것을 좋아합니다.</p>
+        <a class="btn btn-primary" href="#projects">프로젝트 보기</a>
+      </div>
+    </section>
+
+    <!-- S02 소개 -->
+    <section id="about" class="section">
+      <div class="container about">
+        <div class="avatar" aria-hidden="true">장</div>
+        <div class="about-body">
+          <h2 class="section-title">소개</h2>
+          <p>충남대학교에서 컴퓨터를 공부하고 있습니다. 카카오 테크 캠퍼스에서 팀 프로젝트와 AI 에이전트 실습을 하며 협업하는 방법을 배웠고, 해커톤과 오픈소스 기여로 직접 만들어 보는 경험을 쌓고 있습니다.</p>
+          <p>수업에서는 Oracle과 PostgreSQL로 데이터베이스를 설계하고, AWS 위에 서비스를 올리는 과정을 공부하고 있습니다.</p>
+
+          <h3 class="sub-title">경험</h3>
+          <ul class="timeline">
+            <li><span class="tl-date">2026</span><span class="tl-text">카카오 테크 캠퍼스 4기 참여 (충남대 2팀 팀 프로젝트)</span></li>
+            <li><span class="tl-date">2026</span><span class="tl-text">ANA 동아리 총무 (2026년 한 해)</span></li>
+          </ul>
+
+          <h3 class="sub-title">기술 스택</h3>
+          <ul class="tags">
+            <li>Python</li><li>JavaScript</li><li>C++</li><li>React</li>
+            <li>PostgreSQL</li><li>Oracle</li><li>AWS</li>
+          </ul>
+          <h3 class="sub-title">배워 보고 싶은 기술</h3>
+          <ul class="tags tags-outline">
+            <li>TypeScript</li><li>Spring</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- S03 프로젝트 -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">프로젝트</h2>
+        <p class="section-desc">카드의 자세히 보기를 누르면 맡은 역할과 결과를 볼 수 있습니다.</p>
+        <div class="cards" id="project-list" aria-live="polite">
+          <p class="muted">프로젝트를 불러오는 중입니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- S04 연락처 -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">연락처</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <span class="contact-label">이메일</span>
+            <span class="contact-value" id="email-text">solquick24@gmail.com</span>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:solquick24@gmail.com">메일 보내기</a>
+              <button type="button" class="btn btn-ghost" id="copy-email">주소 복사</button>
+            </div>
+            <span class="copy-status" id="copy-status" role="status"></span>
+          </div>
+          <div class="contact-card">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/Solquick24</span>
+            <div class="contact-actions">
+              <a class="btn btn-ghost" href="https://github.com/Solquick24" target="_blank" rel="noopener noreferrer">GitHub 열기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S05 방명록 -->
+    <section id="guestbook" class="section section-alt">
+      <div class="container narrow">
+        <h2 class="section-title">방명록</h2>
+        <p class="section-desc" id="guestbook-notice">방명록 기능은 준비 중입니다. 곧 글을 남길 수 있습니다.</p>
+        <form class="gb-form" id="gb-form" novalidate>
+          <label for="gb-name">이름</label>
+          <input id="gb-name" name="name" type="text" maxlength="20" autocomplete="name" placeholder="이름 (1~20자)">
+          <p class="field-error" id="gb-name-error"></p>
+
+          <label for="gb-message">메시지</label>
+          <div class="textarea-wrap">
+            <textarea id="gb-message" name="message" maxlength="200" rows="3" placeholder="남기고 싶은 말 (1~200자)"></textarea>
+            <span class="counter" id="gb-counter">0 / 200</span>
+          </div>
+          <p class="field-error" id="gb-message-error"></p>
+
+          <button type="submit" class="btn btn-primary" id="gb-submit">남기기</button>
+          <p class="form-status" id="gb-status" role="status"></p>
+        </form>
+        <ul class="gb-list" id="gb-list"></ul>
+        <button type="button" class="btn btn-ghost hidden" id="gb-more">더 보기</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 장현성 · Amazon S3와 CloudFront로 배포</p>
+  </footer>
+
+  <!-- 프로젝트 상세 창 -->
+  <div class="modal hidden" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-panel">
+      <button type="button" class="modal-close" id="modal-close" aria-label="닫기">×</button>
+      <h3 id="modal-title"></h3>
+      <p class="modal-period" id="modal-period"></p>
+      <dl class="modal-info" id="modal-info"></dl>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
