@@ -1,7 +1,7 @@
 # S3에 사이트 파일을 올리고 CloudFront 캐시를 무효화한다.
 # 사용법: ./scripts/deploy.ps1 -DistributionId E1234ABCD
 param(
-  [string]$Bucket = "solquick24-self-intro-webapp",
+  [string]$Bucket = "solquick24-portfolio",
   [string]$DistributionId = $env:CF_DISTRIBUTION_ID
 )
 $ErrorActionPreference = "Stop"

@@ -1,4 +1,4 @@
-# 자기소개 웹앱 (self-intro-webapp)
+# 자기소개 웹앱 (portfolio)
 
 충남대학교 클라우드 데이터베이스 수업의 자기소개 웹앱 프로젝트이다.
 원페이지 정적 사이트를 Amazon S3에 올리고 CloudFront(OAC)로 배포한다.
